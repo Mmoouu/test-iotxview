@@ -13179,19 +13179,19 @@ button.dropdown-toggle.btn.btn-primary {
   transition: background-color 0.5s;
 }
 
-.search-table tr td {
+.search-table ul li {
   height: 50px;
   float: left;
   cursor: pointer;
   color: #20c997;
 }
-.search-table tr td p{
+.search-table ul li p{
   height: auto;
   padding: 16px;
   text-align: center;
 }
 
-.search-table tr td .cryptoIcon{
+.search-table ul li .cryptoIcon{
   margin: 10px;
   height: 50px;
   width: auto;
