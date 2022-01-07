@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
-import Icon from "react-crypto-icons";
+// import Icon from "react-crypto-icons";
 import tokens from "../../components/tokenLists";
 // import { useQuery, gql } from "@apollo/client";
 
@@ -90,7 +90,8 @@ const Tokens = () => {
                                             <tr key={tokenList.id}>
                                                 <td className="list-id">{tokenList.id}</td>
                                                 <td className="coin-name">
-                                                    <Icon className="cryptoIcon" name={tokenList.symbol} size={25} />
+                                                    <i className={'cc '+tokenList.symbol.toUpperCase()+'-alt'}></i>
+                                                    {/* <Icon className="cryptoIcon" name={tokenList.symbol} size={25} /> */}
                                                     {tokenList.name}
                                                 </td>
                                                 <td>{tokenList.symbol.toUpperCase()}</td>

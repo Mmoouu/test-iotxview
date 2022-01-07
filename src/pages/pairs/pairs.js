@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
-import Icon from "react-crypto-icons";
+// import Icon from "react-crypto-icons";
 import pairs from "../../components/pairList";
 
 const Pairs = () => {
@@ -81,8 +81,10 @@ const Pairs = () => {
                                             <tr key={pairsList.id}>
                                                 <td className="list-id">{pairsList.id}</td>
                                                 <td className="coin-name">
-                                                    <Icon className="cryptoIcon" name={pairsList.symbol} size={25} />
-                                                    <Icon className="cryptoIcon" name={pairsList.symbolpair} size={25} />
+                                                    {/* <Icon className="cryptoIcon" name={pairsList.symbol} size={25} /> */}
+                                                    {/* <Icon className="cryptoIcon" name={pairsList.symbolpair} size={25} /> */}
+                                                    <i className={'cc '+pairsList.symbol.toUpperCase()+'-alt'}></i>{' - '}
+                                                    <i className={'cc '+pairsList.symbolpair.toUpperCase()+'-alt'}></i>
                                                     {pairsList.names}
                                                 </td>
                                                 <td>{pairsList.liquidity}</td>

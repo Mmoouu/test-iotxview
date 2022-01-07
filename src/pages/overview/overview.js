@@ -5,7 +5,7 @@ import ChartViewContext from "../../context/ChartViewContext";
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import FirstChart from "../../components/FirstChart";
 // import SecondChart from "../../components/SecondChart";
-import Icon from "react-crypto-icons";
+// import Icon from "react-crypto-icons";
 // import axios from "axios";
 import tokens from "../../components/tokenLists";
 import SearchBar from "../../components/SearchBar";
@@ -111,7 +111,8 @@ const Overview = () => {
                                                 <tr key={tokenList.id}>
                                                     <td className="list-id">{tokenList.id}</td>
                                                     <td className="coin-name">
-                                                        <Icon className="cryptoIcon" name={tokenList.symbol} size={25} />
+                                                        <i className={'cc '+tokenList.symbol.toUpperCase()+'-alt'}></i>
+                                                        {/* <Icon className="cryptoIcon" name={tokenList.symbol} size={25} /> */}
                                                         {tokenList.name}
                                                     </td>
                                                     <td>{tokenList.symbol.toUpperCase()}</td>

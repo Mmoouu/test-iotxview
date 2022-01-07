@@ -22,6 +22,7 @@ const useSearch = () => {
       }, 1000);
       return () => clearTimeout(timeoutId);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data.slug]);
   
   return { data, setData };

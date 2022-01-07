@@ -13170,42 +13170,57 @@ button.dropdown-toggle.btn.btn-primary {
   border-color            : #F1F1F1;
 }
 
-.search-table tr{
-  width: 100%;
-  height: 50px;
-  border-radius: 10px;
-  cursor: pointer;
+.search-table ul{
   background-color:rgba(255, 255, 255, 0.0);
-  transition: background-color 0.5s;
 }
 
 .search-table ul li {
-  height: 50px;
   float: left;
+  overflow: hidden;
+  height: 50px;
+  width: 100%;
   cursor: pointer;
   color: #20c997;
+  border-radius: 5px;
 }
+
 .search-table ul li p{
-  height: auto;
+  float: left;
+  overflow: hidden;
   padding: 16px;
   text-align: center;
 }
 
-.search-table ul li .cryptoIcon{
+.search-table ul li i{
+  float: left;
+  overflow: hidden;
   margin: 10px;
   height: 50px;
   width: auto;
 }
 
-.dark-theme .search-table ul:hover{
+.ultimo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dark-theme .search-table ul li:hover{
   background-color:rgba(255, 255, 255, 0.05);   
 }
 
-.search-table ul:hover{
+.search-table ul li:hover{
   background-color:rgba(100, 100, 100, 0.05); 
 }
 
-
+table i {
+  margin-right:10px;
+  font-size: 20px;
+}
+ul li i {
+  margin-right:10px;
+  font-size: 20px;
+}
 
 
 /* BUILD TAILWIND */

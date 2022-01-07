@@ -1,6 +1,6 @@
 import React from "react";
 import useSearch from '../hooks/useSearch';
-import Icon from "react-crypto-icons";
+// import Icon from "react-crypto-icons";
 import useOnclickOutside from "react-cool-onclickoutside";
 
 const SearchBar = () => {
@@ -35,23 +35,23 @@ const SearchBar = () => {
         <div className="col-xxl-12 col-xl-12">
           <div className="card-box">
             <div className="card-body">                  
-              <table className="search-table"> 
-                <tbody>
+              <div className="search-table"> 
+                {/* <tbody> */}
+                <ul className="ultimo">
                   {data.results.map((tokenList) => (
-                    <tr key={tokenList.id}>
-                      <td>
-                        <Icon className="cryptoIcon" name={tokenList.symbol} size={30} />
-                      </td>
-                      <td>                      
+                    
+                      <li key={tokenList.id}>
+                        {/* <Icon className="cryptoIcon" name={tokenList.symbol} size={30} /> */}
+                        <i className={'cc '+tokenList.symbol.toUpperCase()+'-alt'}></i>                    
                         <p>{tokenList.symbol.toUpperCase()}</p>
-                      </td>
-                      <td>
+                      
                         <p>{tokenList.name.toUpperCase()}</p>
-                      </td>
-                    </tr>   
+                      </li>
+                      
                   ))}  
-                </tbody>                         
-              </table>                 
+                  </ul> 
+                {/* </tbody>                          */}
+              </div>                 
             </div>
           </div>
         </div>     

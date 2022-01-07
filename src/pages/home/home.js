@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import Icon from 'react-crypto-icons';
 import ThemeContext from "../../context/ThemeContext";
 import overview_1 from '../../images/overview_1.png';
 import newTokens from '../../components/newTokenList';
@@ -58,7 +57,8 @@ const Home = () => {
                                                 <tr key={tokenList.id}>
                                                     <td>{tokenList.id}</td>
                                                     <td key={tokenList.symbol} className="coin-name">
-                                                        <Icon className="cryptoIcon" name={tokenList.symbol} size={25} />
+                                                        <i className={'cc '+tokenList.symbol.toUpperCase()+'-alt'}></i>
+                                                        {/* <Icon className="cryptoIcon" name={tokenList.symbol} size={25} /> */}
                                                         {tokenList.name}
                                                     </td>
                                                     <td>{tokenList.symbol.toUpperCase()}</td>
