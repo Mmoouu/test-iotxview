@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import ThemeContext from "../../context/ThemeContext";
 import overview_1 from '../../images/overview_1.png';
 import newTokens from '../../components/newTokenList';
+import IotexPriceContext from "../../context/IotexPriceContext";
 
 
 const Home = () => {
     const { theme } = useContext(ThemeContext);
+    const { iotexPrice } = useContext(IotexPriceContext);
 
     return (
         <>
@@ -24,7 +26,7 @@ const Home = () => {
                                     bot and price alert signals for a smooth and better DeFi experience.</p>
                                 <div className="intro-btn">
                                     <a href='https://t.me/iotexview' rel='noopener noreferrer' target='_blank' className="btn btn-primary">Join the Comunity</a>
-                                    <Link to={"/overview"} className="btn btn-outline-primary ml-20">Overview</Link>
+                                    <Link to={"/overview"} className="btn btn-outline-primary ml-20">Launch App</Link>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +59,7 @@ const Home = () => {
                                                 <tr key={tokenList.id}>
                                                     <td>{tokenList.id}</td>
                                                     <td key={tokenList.symbol} className="coin-name">
-                                                        <i className={'cc '+tokenList.symbol.toUpperCase()+'-alt'}></i>
+                                                        <i className={'cc '+tokenList.symbol.toUpperCase()+'-alt '+tokenList.symbol.toUpperCase()}></i>
                                                         {/* <Icon className="cryptoIcon" name={tokenList.symbol} size={25} /> */}
                                                         {tokenList.name}
                                                     </td>

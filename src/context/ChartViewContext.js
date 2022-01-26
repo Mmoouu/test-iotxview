@@ -3,7 +3,6 @@ import { createContext, useState } from "react";
 const ChartViewContext = createContext();
 
 const initialChart = "container";
-// dashboard-pro
 
 const ChartViewProvider = ({ children }) => {
   const [view, setView] = useState(initialChart);

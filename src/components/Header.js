@@ -1,16 +1,14 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
-// import AuthContext from "../context/AuthContext";
-// import LanguageContext from "../context/LanguageContext";
 import ThemeContext from "../context/ThemeContext";
 import ChartViewContext from "../context/ChartViewContext";
 import logo from "../images/logo.png"
 
 const Header = () => {
-  const { theme, handleTheme } = useContext(ThemeContext);
-  const { view } = useContext(ChartViewContext);
+    const { theme, handleTheme } = useContext(ThemeContext);
+    const { view } = useContext(ChartViewContext);
 
-  return (
+    return (
         <>
             <div className={theme}>
                 <div className="header">
